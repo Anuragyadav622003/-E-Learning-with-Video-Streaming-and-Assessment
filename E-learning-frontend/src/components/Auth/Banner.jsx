@@ -1,5 +1,7 @@
 import React from "react";
-import banner from "../../public/E.jpg";
+//import banner from "../../public/E.jpg";
+const banner = "/E.jpg";
+
 function Banner() {
   return (
     <>
