@@ -1,0 +1,54 @@
+[
+    {
+      "id":1,
+      "name":"story book",
+      "title":"About mahabharat",
+      "price":0,
+      "category":"free",
+      "image":"https://www.shutterstock.com/image-photo/book-books-on-wooden-table-library-2471356819"
+
+    },
+    {
+        "id":2,
+      "name":"Horror book",
+      "title":"About mahabharat",
+      "price":0,
+      "category":"paid",
+      "image":"https://www.shutterstock.com/image-photo/book-books-on-wooden-table-library-2471356819"
+    },
+    {
+     "id":3,
+      "name":"Drama book",
+      "title":"About mahabharat",
+      "price":0,
+      "category":"free",
+      "image":"https://www.shutterstock.com/image-photo/old-book-by-shakespeare-381920014"
+    },
+    {
+        "id":4,
+        "name":"story book",
+        "title":"Kahani ki kitab",
+        "price":0,
+        "category":"Free",
+         "image":"https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_24307396.htm#fromView=search&page=1&position=0&uuid=ddabc1c2-16dc-477e-916f-f37d293be0b6"
+    
+        },
+        {
+            "id":6,
+            "name":"story book",
+            "title":"Kahani ki kitab",
+            "price":110,
+            "category":"paid",
+             "image":"https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_24307396.htm#fromView=search&page=1&position=0&uuid=ddabc1c2-16dc-477e-916f-f37d293be0b6"
+        
+            },
+            {
+                "id":5,
+                "name":"story book",
+                "title":"Kahani ki kitab",
+                "price":0,
+                "category":"Free",
+                 "image":"https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_24307396.htm#fromView=search&page=1&position=0&uuid=ddabc1c2-16dc-477e-916f-f37d293be0b6"
+            
+                }
+]
