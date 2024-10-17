@@ -2,9 +2,9 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import connectDB from './db.js';
-import userRoutes from './src/routers/User.js';
-import quizzRoutes from './src/routers/Quizzes.js'
-import { insertQuizzes } from './src/modals/Ques.js';
+import userRoutes from './src/routers/User.route.js';
+import quizzRoutes from './src/routers/Quizz.route.js'
+// import { insertQuizzes } from './src/modals/Ques.js';
 
 
 

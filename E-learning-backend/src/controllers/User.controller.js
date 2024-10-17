@@ -1,7 +1,8 @@
 // controllers/userController.js
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import User from "../modals/User.js"; // Adjust the import as necessary
+import User from "../modals/User.model.js"; // Adjust the import as necessary
+import { uploadonCloudinary } from "../utils/cloudinary.utils.js";
 
 const secretKey = process.env.SECRET_KEY || "ELearning"; // Use consistent naming for environment variables
 
@@ -13,9 +14,10 @@ export const registerUser = async (req, res) => {
     password,
     mobileNumber,
     gender,
-    role,
-    profileImage,
+    role
+   
   } = req.body;
+  const profileLocalPath = req.files?.profileimage?.[0]?.path;
 
   try {
     // Check if the user already exists
@@ -23,6 +25,18 @@ export const registerUser = async (req, res) => {
     if (existingUser) {
       return res.status(400).json({ message: "User already exists" });
     }
+    // here we local path of profile image and uplaode on cloudinary
+    if (!profileLocalPath) {
+      throw new ApiError(400, "Profile imgage file required");
+    }
+  
+    const profileImage = await uploadonCloudinary(profileLocalPath);
+  
+  
+    if (!profileImage) {
+      throw new ApiError(400, "Image upload failed");
+    }
+
 
     // Hash the password
     const hashedPassword = await bcrypt.hash(password, 10); // Use a salt round of 10 for better security
